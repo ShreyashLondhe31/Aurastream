@@ -5,7 +5,9 @@ const Tvshows = () => {
   return (
     <>
       <Navbar />
-      <div>This is tvshows page</div>
+      <div className="w-full h-screen flex justify-center items-center">
+        <h1 className="text-5xl font-bold">Coming soon...</h1>
+      </div>
     </>
   );
 };

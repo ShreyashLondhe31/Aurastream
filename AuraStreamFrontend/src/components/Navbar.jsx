@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div>
-      <div className="h-20 w-full bg-zinc-800 p-5 text-white flex justify-between items-center px-20">
+    <div className="w-full fixed top-0 ">
+      <div className="h-20 w-full bg-zinc-800 p-5 text-white flex justify-between items-center ">
         <h3 className="text-3xl font-semibold">Aurastream</h3>
         <nav>
           <li className="flex justify-between items-center gap-14 font-medium">
@@ -12,7 +12,7 @@ const Navbar = () => {
               className={(e) => {
                 return e.isActive ? "red" : "";
               }}
-              to="/home"
+              to="/api/home"
             >
               Home
             </NavLink>
@@ -20,7 +20,7 @@ const Navbar = () => {
               className={(e) => {
                 return e.isActive ? "red" : "";
               }}
-              to="/movies"
+              to="/api/movies"
             >
               Movies
             </NavLink>
@@ -28,7 +28,7 @@ const Navbar = () => {
               className={(e) => {
                 return e.isActive ? "red" : "";
               }}
-              to="/tvshows"
+              to="/api/tvshows"
             >
               Tv shows
             </NavLink>
@@ -36,10 +36,13 @@ const Navbar = () => {
               className={(e) => {
                 return e.isActive ? "red" : "";
               }}
-              to="/mylist"
+              to="/api/mylist"
             >
               My list
             </NavLink>
+            <div className="w-8 h-8 border-2 rounded-full overflow-hidden cursor-pointer">
+              <img src="/Images/mockProfilePic.jpeg" alt="" />
+            </div>
           </li>
         </nav>
       </div>

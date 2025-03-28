@@ -66,7 +66,7 @@ const Signup = () => {
           />
         </form>
         <Link
-          to="/login"
+          to="/api/login"
           className="mt-10 hover:scale-90 transition-all ease-linear"
         >
           Already registered? Click here to login.
